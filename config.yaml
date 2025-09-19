@@ -4,10 +4,10 @@ regions:
   - global
 
 blocklist:
-  - "724594573298"
+  - "000000000000"
 
 accounts:
-  "745738989517":  
+  "724594573298":  
     filters:
       IAMUser:
       - property: "UserName"
