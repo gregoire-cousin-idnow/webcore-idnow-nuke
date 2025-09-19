@@ -1,0 +1,48 @@
+
+regions:
+  - eu-west-3
+  - global
+
+account-blocklist:
+  - "724594573298"
+
+accounts:
+  "745738989517":  
+    filters:
+      IAMUser:
+      - property: "UserName"
+        type: "glob"
+        value: "AWSReservedSSO_*"
+      IAMRolePolicyAttachment:
+      - property: "RoleName"
+        type: "glob"
+        value: "AWSReservedSSO_*"
+      IAMUserPolicyAttachment:
+      - property: "UserName"
+        type: "glob"
+        value: "AWSReservedSSO_*"
+      IAMRole:
+      - property: "RoleName"
+        type: "glob"
+        value: "AWSReservedSSO_*"
+      
+resource-types:
+  excludes:
+    - Route53
+    - Route53Zone
+    - Route53HostedZone
+    - Route53Record
+    - Route53ResolverRule
+    - Route53ResolverEndpoint
+    - Route53ResolverRuleAssociation
+    - Route53VPCAssociationAuthorization
+    - IAMUserAccessKey
+    - IAMGroup
+    - CertificateManager
+    - ACMCertificate
+    - ACMCertificateValidation
+    - OSPackage
+    - SNSSubscription
+    - SecretsManagerSecret
+    - ECRRepository
+    - S3Bucket:xtcross-registry
