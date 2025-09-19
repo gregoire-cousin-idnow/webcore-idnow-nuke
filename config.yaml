@@ -45,4 +45,3 @@ resource-types:
     - SNSSubscription
     - SecretsManagerSecret
     - ECRRepository
-    - S3Bucket:xtcross-registry
