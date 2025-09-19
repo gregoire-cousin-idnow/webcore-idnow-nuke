@@ -7,7 +7,8 @@ blocklist:
   - "000000000000"
 
 accounts:
-  "724594573298":  
+  "724594573298":
+    alias: "dev-account-724594573298"  
     filters:
       IAMUser:
       - property: "UserName"
